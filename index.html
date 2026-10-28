@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Privacy Policy for all games and apps by YoungXatik.">
+<title>YoungXatik Privacy Policy</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+body{margin:0}
+
+/* Layout: single reading column with a sticky section index on wide screens; a header band carries the studio name. */
+:root{
+  --bg:#f6f7fb; --surface:#ffffff; --ink:#151a2d; --muted:#5a6182; --line:#dfe2ee;
+  --accent:#3b4cf5; --accent-soft:#e8eaff;
+  --display:"Unbounded", "Arial Black", system-ui, sans-serif;
+  --body:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1220; --surface:#171b2e; --ink:#e8eaf4; --muted:#9aa1c2; --line:#2a3050;
+    --accent:#8c97ff; --accent-soft:#232a52; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1220; --surface:#171b2e; --ink:#e8eaf4; --muted:#9aa1c2; --line:#2a3050;
+  --accent:#8c97ff; --accent-soft:#232a52; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.65}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+header{border-bottom:1px solid var(--line);background:var(--surface)}
+header .wrap{padding-block:40px 32px;display:flex;flex-direction:column;gap:14px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.studio{font-family:var(--mono);font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.studio b{color:var(--accent);font-weight:500}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.lang a{font-family:var(--mono);font-size:13px;padding:6px 14px;color:var(--muted);text-decoration:none}
+.lang a[aria-current="true"]{background:var(--accent);color:var(--surface)}
+.lang a:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(28px,6vw,48px);line-height:1.1;margin:0;text-wrap:balance;letter-spacing:-.01em}
+.meta{display:flex;flex-wrap:wrap;gap:8px 20px;color:var(--muted);font-size:14px}
+.meta span b{color:var(--ink);font-weight:500}
+main .wrap{display:grid;grid-template-columns:220px minmax(0,1fr);gap:48px;padding-block:40px 64px}
+nav.toc{position:sticky;top:calc(env(safe-area-inset-top, 0px) + 24px);align-self:start;display:flex;flex-direction:column;gap:2px}
+.toc-label{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+nav.toc a{color:var(--muted);text-decoration:none;font-size:14px;padding:4px 0 4px 12px;border-left:2px solid var(--line)}
+nav.toc a:hover{color:var(--ink);border-left-color:var(--accent)}
+article{min-width:0;max-width:68ch}
+.scope{background:var(--accent-soft);border-radius:10px;padding:16px 20px;margin-bottom:32px;font-size:15px}
+.scope b{color:var(--accent)}
+section{padding-block:6px 22px;scroll-margin-top:20px}
+section + section{border-top:1px solid var(--line);padding-top:22px}
+h2{font-family:var(--display);font-weight:600;font-size:19px;margin:0 0 10px;text-wrap:balance}
+p{margin:0 0 12px}
+ul{margin:0 0 12px;padding-left:22px;display:flex;flex-direction:column;gap:4px}
+a{color:var(--accent)}
+.contact{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:6px}
+.email{font-family:var(--mono);font-size:15px;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 12px;user-select:all;word-break:break-all}
+button{font:inherit;font-size:14px;font-weight:500;background:var(--accent);color:var(--surface);border:0;border-radius:8px;padding:9px 14px;cursor:pointer}
+button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+footer .wrap{padding-block:24px}
+@media (max-width:760px){
+  main .wrap{grid-template-columns:1fr;gap:24px}
+  nav.toc{position:static}
+}
+</style>
+
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="top">
+      <div class="studio">Developer · <b>YoungXatik</b></div>
+      <div class="lang" role="navigation" aria-label="Language">
+        <a href="#en" id="lang-en">EN</a><a href="#ru" id="lang-ru">RU</a>
+      </div>
+    </div>
+    <h1 data-en="Privacy Policy" data-ru="Политика конфиденциальности">Privacy Policy</h1>
+    <div class="meta">
+      <span data-en="Applies to: &lt;b&gt;all games and apps by YoungXatik&lt;/b&gt;" data-ru="Действует для: &lt;b&gt;всех игр и приложений YoungXatik&lt;/b&gt;"></span>
+      <span data-en="Effective date: &lt;b&gt;October 28, 2026&lt;/b&gt;" data-ru="Дата вступления в силу: &lt;b&gt;28 октября 2026&lt;/b&gt;"></span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <nav class="toc" aria-label="Sections">
+      <div class="toc-label" data-en="Contents" data-ru="Содержание"></div>
+      <a href="#s-collect" data-en="Information we collect" data-ru="Сбор информации"></a>
+      <a href="#s-third" data-en="Third-party services" data-ru="Сторонние сервисы"></a>
+      <a href="#s-log" data-en="Log data" data-ru="Данные журнала"></a>
+      <a href="#s-cookies" data-en="Cookies" data-ru="Файлы cookie"></a>
+      <a href="#s-providers" data-en="Service providers" data-ru="Поставщики услуг"></a>
+      <a href="#s-security" data-en="Security" data-ru="Безопасность"></a>
+      <a href="#s-links" data-en="Links to other sites" data-ru="Ссылки на другие сайты"></a>
+      <a href="#s-children" data-en="Children’s privacy" data-ru="Конфиденциальность детей"></a>
+      <a href="#s-changes" data-en="Changes" data-ru="Изменения"></a>
+      <a href="#s-contact" data-en="Contact us" data-ru="Контакты"></a>
+    </nav>
+
+    <article>
+      <div class="scope" data-en="This policy covers &lt;b&gt;every game and app&lt;/b&gt; published by YoungXatik on Google Play, the App Store and other platforms. All of them are free and provided “as is”. Wherever this policy says “the App” or “the Service”, it means whichever YoungXatik game or app you are using." data-ru="Эта политика распространяется на &lt;b&gt;все игры и приложения&lt;/b&gt;, опубликованные YoungXatik в Google Play, App Store и на других платформах. Все они бесплатны и предоставляются «как есть». Слова «Приложение» или «Сервис» в тексте означают ту игру или приложение YoungXatik, которым вы пользуетесь."></div>
+
+      <section id="s-intro">
+        <p data-en="This page informs users about our policies regarding the collection, use and disclosure of Personal Information when they use our Service." data-ru="На этой странице описано, как мы собираем, используем и раскрываем персональную информацию при использовании нашего Сервиса."></p>
+        <p data-en="By using the Service, you agree to the collection and use of information in accordance with this policy. The Personal Information we collect is used to provide and improve the Service. We will not use or share your information with anyone except as described in this Privacy Policy." data-ru="Используя Сервис, вы соглашаетесь со сбором и использованием информации в соответствии с этой политикой. Собранная информация используется для работы и улучшения Сервиса. Мы не используем и не передаём ваши данные никому, кроме случаев, описанных в этой политике."></p>
+      </section>
+
+      <section id="s-collect">
+        <h2 data-en="Information collection and use" data-ru="Сбор и использование информации"></h2>
+        <p data-en="Our games do not require you to create an account or enter your name, email or phone number to play. For a better experience, some features may ask for limited information; anything you provide is kept by us and used only as described in this policy." data-ru="Для игры не нужно создавать аккаунт или вводить имя, email или номер телефона. Некоторые функции могут запросить ограниченные данные; всё, что вы предоставите, хранится у нас и используется только так, как описано в этой политике."></p>
+        <p data-en="Our apps use third-party services that may collect information used to identify you, such as your device’s advertising ID." data-ru="Наши приложения используют сторонние сервисы, которые могут собирать информацию, позволяющую вас идентифицировать, например рекламный идентификатор устройства."></p>
+      </section>
+
+      <section id="s-third">
+        <h2 data-en="Third-party services" data-ru="Сторонние сервисы"></h2>
+        <p data-en="Links to the privacy policies of third-party service providers used in our apps:" data-ru="Ссылки на политики конфиденциальности сторонних сервисов, используемых в наших приложениях:"></p>
+        <ul>
+          <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Play Services</a></li>
+          <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Google AdMob</a></li>
+        </ul>
+        <p data-en="Ads may be personalized based on your advertising ID. You can reset your advertising ID or opt out of personalized ads in your device settings (Android: Settings → Google → Ads; iOS: Settings → Privacy &amp; Security → Tracking)." data-ru="Реклама может подбираться на основе рекламного идентификатора. Сбросить его или отключить персонализированную рекламу можно в настройках устройства (Android: Настройки → Google → Реклама; iOS: Настройки → Конфиденциальность и безопасность → Отслеживание)."></p>
+      </section>
+
+      <section id="s-log">
+        <h2 data-en="Log data" data-ru="Данные журнала"></h2>
+        <p data-en="If an error occurs in the app, we collect data and information (through third-party products) on your device called Log Data. This Log Data may include your device’s Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when using our Service, the time and date of your use, and other statistics." data-ru="При ошибке в приложении мы собираем данные (через сторонние продукты) на вашем устройстве — данные журнала. Они могут включать IP-адрес устройства, название устройства, версию операционной системы, конфигурацию приложения при использовании Сервиса, дату и время использования и другую статистику."></p>
+      </section>
+
+      <section id="s-cookies">
+        <h2 data-en="Cookies" data-ru="Файлы cookie"></h2>
+        <p data-en="Cookies are files with a small amount of data commonly used as anonymous unique identifiers. They are sent to your browser from the websites you visit and stored on your device’s internal memory." data-ru="Cookie — это небольшие файлы данных, которые обычно используются как анонимные уникальные идентификаторы. Сайты отправляют их в браузер, и они хранятся в памяти устройства."></p>
+        <p data-en="This Service does not use cookies explicitly. However, the app may use third-party code and libraries that use cookies to collect information and improve their services. You can accept or refuse these cookies and know when a cookie is being sent to your device. If you refuse cookies, some parts of the Service may not work." data-ru="Сервис сам не использует cookie. Однако приложение может использовать сторонний код и библиотеки, которые применяют cookie для сбора информации и улучшения своих услуг. Вы можете принять или отклонить cookie и узнавать, когда они отправляются на устройство. Если отклонить cookie, некоторые части Сервиса могут не работать."></p>
+      </section>
+
+      <section id="s-providers">
+        <h2 data-en="Service providers" data-ru="Поставщики услуг"></h2>
+        <p data-en="We may employ third-party companies and individuals for the following reasons:" data-ru="Мы можем привлекать сторонние компании и частных лиц, чтобы:"></p>
+        <ul>
+          <li data-en="To facilitate our Service;" data-ru="обеспечивать работу Сервиса;"></li>
+          <li data-en="To provide the Service on our behalf;" data-ru="предоставлять Сервис от нашего имени;"></li>
+          <li data-en="To perform Service-related services; or" data-ru="выполнять работы, связанные с Сервисом;"></li>
+          <li data-en="To help us analyze how our Service is used." data-ru="анализировать, как используется Сервис."></li>
+        </ul>
+        <p data-en="These third parties have access to your Personal Information in order to perform the tasks assigned to them on our behalf. They are obligated not to disclose or use the information for any other purpose." data-ru="Эти третьи стороны получают доступ к персональной информации только для выполнения порученных задач. Они обязаны не раскрывать и не использовать её в других целях."></p>
+      </section>
+
+      <section id="s-security">
+        <h2 data-en="Security" data-ru="Безопасность"></h2>
+        <p data-en="We value your trust in providing us your Personal Information and use commercially acceptable means to protect it. No method of transmission over the internet or electronic storage is 100% secure and reliable, so we cannot guarantee absolute security." data-ru="Мы ценим ваше доверие и используем коммерчески приемлемые способы защиты персональной информации. Ни один способ передачи данных через интернет или электронного хранения не защищён на 100%, поэтому мы не можем гарантировать абсолютную безопасность."></p>
+      </section>
+
+      <section id="s-links">
+        <h2 data-en="Links to other sites" data-ru="Ссылки на другие сайты"></h2>
+        <p data-en="The Service may contain links to other sites, including in advertisements. If you follow a third-party link, you will be taken to that site. These sites are not operated by us, so we strongly advise you to review their privacy policies. We have no control over and take no responsibility for the content, privacy policies or practices of third-party sites or services." data-ru="Сервис может содержать ссылки на другие сайты, в том числе в рекламе. Перейдя по такой ссылке, вы попадёте на сторонний сайт. Мы им не управляем, поэтому рекомендуем ознакомиться с его политикой конфиденциальности. Мы не контролируем и не несём ответственности за содержание, политику конфиденциальности или действия сторонних сайтов и сервисов."></p>
+      </section>
+
+      <section id="s-children">
+        <h2 data-en="Children’s privacy" data-ru="Конфиденциальность детей"></h2>
+        <p data-en="Our Services are not directed at anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If we discover that a child under 13 has provided us with personal information, we delete it immediately. If you are a parent or guardian and know that your child has provided us with personal information, please contact us so we can take the necessary action." data-ru="Наши Сервисы не предназначены для детей младше 13 лет. Мы сознательно не собираем персональные данные детей младше 13 лет. Если выяснится, что ребёнок младше 13 лет передал нам персональные данные, мы сразу их удалим. Если вы родитель или опекун и знаете, что ваш ребёнок передал нам данные, свяжитесь с нами, и мы примем необходимые меры."></p>
+      </section>
+
+      <section id="s-changes">
+        <h2 data-en="Changes to this Privacy Policy" data-ru="Изменения политики конфиденциальности"></h2>
+        <p data-en="We may update this Privacy Policy from time to time, so please review this page periodically. We will notify you of any changes by posting the new Privacy Policy on this page. This policy is effective as of October 28, 2026." data-ru="Мы можем время от времени обновлять эту политику, поэтому периодически проверяйте эту страницу. Об изменениях мы сообщим, опубликовав новую версию здесь. Политика действует с 28 октября 2026 года."></p>
+      </section>
+
+      <section id="s-contact">
+        <h2 data-en="Contact us" data-ru="Контакты"></h2>
+        <p data-en="If you have any questions or suggestions about this Privacy Policy, contact us by email:" data-ru="Если у вас есть вопросы или предложения по этой политике, напишите нам:"></p>
+        <div class="contact">
+          <span class="email" id="email">youngxatik@gmail.com</span>
+          <button type="button" id="copy" data-en="Copy email" data-ru="Скопировать"></button>
+        </div>
+      </section>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap" data-en="© 2026 YoungXatik. This policy applies to all YoungXatik games and apps." data-ru="© 2026 YoungXatik. Политика действует для всех игр и приложений YoungXatik."></div>
+</footer>
+
+<script>
+(function(){
+  var lang = 'en';
+  function apply(l){
+    lang = l === 'ru' ? 'ru' : 'en';
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-en]').forEach(function(el){
+      el.innerHTML = el.getAttribute('data-' + lang);
+    });
+    document.getElementById('lang-en').setAttribute('aria-current', lang === 'en');
+    document.getElementById('lang-ru').setAttribute('aria-current', lang === 'ru');
+  }
+  function fromHash(){
+    var h = location.hash.replace('#','');
+    if (h === 'ru' || h === 'en') apply(h);
+  }
+  document.querySelectorAll('nav.toc a').forEach(function(a){
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      var t = document.querySelector(a.getAttribute('href'));
+      if (t) t.scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
+    });
+  });
+  document.getElementById('copy').addEventListener('click', function(){
+    var btn = this, done = lang === 'ru' ? 'Скопировано' : 'Copied';
+    function selectIt(){
+      var r = document.createRange(); r.selectNodeContents(document.getElementById('email'));
+      var s = getSelection(); s.removeAllRanges(); s.addRange(r);
+    }
+    try {
+      navigator.clipboard.writeText('youngxatik@gmail.com').then(function(){
+        btn.textContent = done;
+        setTimeout(function(){ btn.textContent = btn.getAttribute('data-' + lang); }, 1600);
+      }, selectIt);
+    } catch(e){ selectIt(); }
+  });
+  window.addEventListener('hashchange', fromHash);
+  apply('en');
+  fromHash();
+})();
+</script>
+
+</body>
+</html>
